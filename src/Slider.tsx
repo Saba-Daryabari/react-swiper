@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, FreeMode } from "swiper/modules";
-import { useState } from "react";
 import 'swiper/css';
 import './App.css';
 import img1 from './assets/img(1).jpg'
@@ -15,7 +14,6 @@ import img9 from './assets/img (9).jpg'
 
 
 export default function Slider() {
-    const [reverse, setReverse] = useState(false);
     return (
         <Swiper
             // install Swiper modules
@@ -30,8 +28,7 @@ export default function Slider() {
                 sensitivity: 1,
                 releaseOnEdges: true,
             }}
-            onReachEnd={() => setReverse(true)}
-            onReachBeginning={() => setReverse(false)}
+
 
             speed={800}
             allowTouchMove={true}
