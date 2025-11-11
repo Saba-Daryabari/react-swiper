@@ -1,10 +1,8 @@
-import React from "react";
-import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, FreeMode } from 'swiper/modules';
+import { Mousewheel, FreeMode } from "swiper/modules";
+import { useState } from "react";
 import 'swiper/css';
-import 'swiper/css/navigation';
-import './App.css'
+import './App.css';
 import img1 from './assets/img(1).jpg'
 import img2 from './assets/img (2).jpg'
 import img3 from './assets/img (3).jpg'
