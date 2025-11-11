@@ -28,7 +28,20 @@ export default function Slider() {
                 sensitivity: 1,
                 releaseOnEdges: true,
             }}
-
+            breakpoints={{
+                0: {            
+                    slidesPerView: 1.2,
+                    spaceBetween: 10,
+                },
+                600: {          
+                    slidesPerView: 2.5,
+                    spaceBetween: 15,
+                },
+                1024: {        
+                    slidesPerView: 5.2,
+                    spaceBetween: 20,
+                },
+            }}
 
             speed={800}
             allowTouchMove={true}
